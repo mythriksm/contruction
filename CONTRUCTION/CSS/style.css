@@ -1,0 +1,405 @@
+* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* 
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+} */
+
+/* Hero Section */
+.hero {
+  background-image: url('/accets/contruction.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+  color: white;
+}
+
+/* Overlay for readability */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content Styling */
+.contentm {
+  
+  text-align: left;
+
+}
+
+.contentm h1 {
+  /* font-size: 3rem; */
+  /* line-height: 1.2; */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contentm h1 span {
+  display: block;
+}
+
+.contentm p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  justify-content: center;
+  background-color: #429b3c;
+  color: black;
+  text-decoration:none;
+  /* padding: 0.75rem 2rem; */
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #348750;
+}
+
+/* build section */
+/* Layout Section */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  /* min-height: 100vh; */
+}
+
+/* Image Side */
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height:500px;
+  object-fit: cover;
+}
+/* Text Side */
+.text-container {
+  flex: 1;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text-container h2 span {
+  display: block;
+}
+
+.text-container h3 {
+  font-size: 1.25rem;
+  color: #3C9B5F;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.text-container p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 68px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .image-container,
+  .text-container {
+    width: 100%;
+  }
+
+  .text-container {
+    padding: 2rem;
+  }
+}
+
+/* Services Section */
+.services-section {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.services-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2e8b57; /* Darker green */
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.column p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+.bottom-bar{
+    background-color: #2e8b57;
+    height: 80px;
+    margin-top: 30px; 
+    margin-bottom: 0px;
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #1e1e1e;
+  padding: 4rem 2rem;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.address {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #3C9B5F;
+  color: black;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2e7d48;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .projects-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* why section */
+* Section Container */
+.why-us-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-us-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* Grid */
+.stats-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Individual Stat Cards */
+.stat-card {
+  background-color: #f3f3f3;
+  flex: 1;
+  min-width: 250px;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.stat-title {
+  color: #3C9B5F;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* <!-- testimonial section --> */
+ .testimonials-section {
+      display: flex;
+      padding: 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .title {
+      flex: 1;
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .testimonials {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .testimonial {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .testimonial cite {
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-section {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .title {
+        margin-bottom: 30px;
+        font-size: 36px;
+      }
+    }
+    /* last section */
+   .hero-section {
+  background: url('/accets/pexels-photo-10202865.webp') no-repeat center center/cover;
+  /* height: 58vh; */
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px;
+  /* height:300px; */
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
+}
+.contact-info{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 250px;
+}
+.logo{
+  width: 60px;
+}
